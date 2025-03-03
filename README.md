@@ -4,8 +4,6 @@ This project demonstrates how to host a static website using AWS S3 and CloudFro
 
 ## Architecture
 
-![Architecture Diagram](./docs/images/architecture.png)
-
 The project uses the following AWS services:
 - **Amazon S3**: Hosts the static website files
 - **Amazon CloudFront**: Provides CDN capabilities and HTTPS
@@ -50,14 +48,14 @@ To deploy this project yourself:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/aws-s3-cloudfront-website.git
+git clone https://github.com/Saaki867/aws-s3-cloudfront-website.git
 cd aws-s3-cloudfront-website
 
 # Upload the files to your S3 bucket
-aws s3 sync ./website s3://your-bucket-name/ --delete
+aws s3 sync ./website s3://bucket1static1/ --delete
 
 # Create a CloudFront invalidation after updates
-aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
+aws cloudfront create-invalidation --distribution-id E16I5JOJSVR6II --paths "/*"
 ```
 
 ## Repository Structure
