@@ -49,6 +49,7 @@ To deploy this project yourself:
 ```bash
 # Clone the repository
 git clone https://github.com/Saaki867/aws-s3-cloudfront-website.git
+
 cd aws-s3-cloudfront-website
 
 # Upload the files to your S3 bucket
